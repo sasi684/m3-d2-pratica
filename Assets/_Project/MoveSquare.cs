@@ -20,6 +20,12 @@ public class MoveSquare : MonoBehaviour
         float yInput = Input.GetAxis("Vertical");
 
         Vector2 direction = new Vector2(xInput, yInput);
+
+        float sqrLength = direction.sqrMagnitude;
+        if(sqrLength > 1)
+        {
+            direction = direction / Mathf.Sqrt(sqrLength);
+        }
         _rb.MovePosition(_rb.position + direction * (_speed * Time.deltaTime));
     } 
 }
