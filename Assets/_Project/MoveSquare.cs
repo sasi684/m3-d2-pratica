@@ -21,5 +21,5 @@ public class MoveSquare : MonoBehaviour
 
         Vector2 direction = new Vector2(xInput, yInput);
         _rb.MovePosition(_rb.position + direction * (_speed * Time.deltaTime));
-    }
+    } 
 }
