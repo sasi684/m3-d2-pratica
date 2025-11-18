@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  maxDistance: 0
+  _maxDistance: 10
   _rb: {fileID: 0}
 --- !u!50 &1133277268
 Rigidbody2D:
